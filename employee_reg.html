@@ -107,13 +107,13 @@
 
     <script>
         document.getElementById("registration-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form from actually submitting
+            event.preventDefault(); 
 
             var form = event.target;
             var formData = new FormData(form);
 
             for (var pair of formData.entries()) {
-                console.log(pair[0] + ': ' + pair[1]); // Log the name and value pairs
+                console.log(pair[0] + ': ' + pair[1]); 
             }
         });
     </script>
